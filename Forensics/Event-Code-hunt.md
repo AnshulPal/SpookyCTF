@@ -10,7 +10,7 @@ Maya Elmer managed to seize one of The Consortium’s computers, but when she at
 
 ## Provided Files
 
-![Event Log Files]([Forensics/1.png](https://github.com/AnshulPal/SpookyCTF/blob/main/Forensics/1.png))
+![1](https://github.com/user-attachments/assets/78c26fc2-acc5-4bc6-ae44-b3d4e2b1c210)
 
 ## Investigation Process
 
@@ -20,7 +20,7 @@ I started by investigating the PowerShell files, as they can often contain usefu
 
 After reviewing the event logs, I found something particularly useful:
 
-![PowerShell Command](Forensics/2.png)
+![2](https://github.com/user-attachments/assets/ee26ef1c-cf45-40d9-b644-333762e553ea)
 
 This is a PowerShell command to run a script named `Chrome.py`, which takes the argument `Flag.txt` (potentially containing the flag) and uses the encryption key `I_Like_Big_Bytes_And_I_cannot_Lie!`.
 
@@ -28,7 +28,7 @@ This is a PowerShell command to run a script named `Chrome.py`, which takes the 
 
 Next, I located the complete code for `Chrome.py`:
 
-![Chrome.py Code](Forensics/3.png)
+![3](https://github.com/user-attachments/assets/6de027d8-a8aa-462e-b60c-a0f510a48c12)
 
 Here’s the relevant code snippet:
 
@@ -74,12 +74,12 @@ python Chrome.py encrypted_file output_file I_Like_Big_Bytes_And_I_cannot_Lie!
 ### Result: The Flag
 
 Upon running the script, I successfully decrypted the file and revealed the hidden flag.
-![](Forensics/4.png)
+![4](https://github.com/user-attachments/assets/ac9b899a-b721-4b53-8f89-e2b68c0d617a)
 
 
 ### Conclusion
 
 This forensic challenge was a valuable experience, highlighting the importance of analyzing event logs and scripts in cybersecurity investigations. By understanding encryption, I was able to reverse the process and uncover the secrets locked away within the encrypted file.
 
-![](Forensics/5.png)
+![5](https://github.com/user-attachments/assets/3901e9a5-8b3a-4bc7-b3ed-7ebe36087bbc)
 
