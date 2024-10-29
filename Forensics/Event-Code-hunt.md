@@ -10,7 +10,7 @@ Maya Elmer managed to seize one of The Consortium’s computers, but when she at
 
 ## Provided Files
 
-![Event Log Files](Forensics/1.png)
+![Event Log Files]([Forensics/1.png](https://github.com/AnshulPal/SpookyCTF/blob/main/Forensics/1.png))
 
 ## Investigation Process
 
